@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crud-acoes": {
+      "hosting": {
+        "crud": [
+          "crud-acoes"
+        ]
+      }
+    }
+  }
+}

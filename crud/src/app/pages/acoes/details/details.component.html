@@ -1,0 +1,33 @@
+<div class="card mt-2">
+	<div class="class card-header">
+		Detalhes da Ação
+	</div>
+	<div class="class card-body">
+	<ul class="list-group list-group-flush">
+		<li class="list-group-item">
+			Sigla: <h5>{{value.Sigla}}</h5>
+		</li>
+		<li class="list-group-item">
+			Nome: <h5>{{value.Nome}}</h5>
+		</li>
+		<li class="list-group-item">
+			Cotação: <h5>{{value.Cotacao}}</h5>
+		</li>
+		<li class="list-group-item">
+			Volume: <h5>{{value.Volume}}</h5>
+		</li>
+		<li class="list-group-item">
+			Data de Compra: <h5>{{value.Data}}</h5>
+		</li>
+		<li class="list-group-item">
+			Hora: <h5>{{value.Hora}}</h5>
+		</li>					
+	</ul>
+	</div>
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-primary m-1 " (click)="onGoToEdit()">Editar</button>
+		<button type="button" class="btn btn-danger m-1" (click)="onGoToDelete()" >Deletar</button>
+
+	</div>
+</div>
+<button type="button" class="btn btn-outline-primary m-1" (click) = "onBackToList()" >Voltar para a lista</button>
