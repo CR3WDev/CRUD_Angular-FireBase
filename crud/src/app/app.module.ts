@@ -9,7 +9,7 @@ import { AcoesFormModule } from './shared/components/acoes-form/acoes-form.modul
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { environment } from './../environments/environment';
-
+import { DashboardModule } from './pages/acoes/dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { environment } from './../environments/environment';
     AppRoutingModule,
     HeaderModule,
     AcoesFormModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    DashboardModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
